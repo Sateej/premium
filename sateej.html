@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motify-Premiere</title>
+    <link rel="shortcut icon" href="Motify.icon.ico" type="image/x-icon">
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+  @media (min-width: 1343px) and (max-width: 1500px) {}
+
+@media (min-width: 1200px) and (max-width: 1342px) {}
+
+
+
+
+
+
+
+       *{
+       
+       font-family: 'Metal Mania';
+       }
+  body{
+    background: linear-gradient(
+        to right,
+        #ffc506 50%,
+        #000000 50%
+    ) fixed;
+           
+        }
+
+        .h{
+          text-align: center;
+          margin: 0;
+            
+        }
+        audio::-webkit-media-controls-play-button,audio::-webkit-media-controls-mute-button{
+            background-color:  #2b8654;
+            border-radius: 20px;
+            width: 20px;
+        }
+        .hover.audio::-webkit-media-controls-play-button{
+background-color: #0dc73b;
+color: #0dc73b;
+        }
+        audio::-webkit-media-controls-toggle-closed-captions-button {
+            background-color: #1d1d1d;
+        }
+        audio::-webkit-media-controls-panel {
+  background-color:rgb(112, 110, 3);
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: goldenrod;
+  border-radius: 22px;
+  margin-left: 4px;
+  color: rgb(0, 0, 0);
+ 
+
+}
+audio::-webkit-media-controls-volume-slider {
+  background-color: #2b8654;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #fff;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+.animated_rainbow_1 {
+    font-size: 42px;
+background-image: -webkit-linear-gradient(left, rgb(81, 197, 27), #5da15b, rgb(153, 201, 42), #6fe241, rgb(42, 87, 5), #b8beb4, rgb(21, 66, 0), #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #ece5eb, rgb(235, 227, 232), #cac2c6, rgb(206, 203, 204), #ffffff, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #2d661200;
+    background-clip: text;
+    text-align: center;
+    font-size: 100px;
+}
+.animated_rainbow_2 {
+    font-size: 42px;
+    background-image: -webkit-linear-gradient(left, rgb(226, 8, 8), #ece5eb, rgb(235, 227, 232), #c2c3ca, rgb(206, 203, 204), #ffffff, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #2d661200;
+    background-clip: text;
+    text-align: center;
+    font-size: 100px;
+}
+.animated_rainbow_3 {
+    font-size: 42px;
+    background-image: -webkit-linear-gradient(left, rgb(185, 55, 15), #a1775b, rgb(201, 172, 42), #41e2c7, #00ff80, rgb(0, 47, 255), #ece5eb, rgb(227, 228, 235), #cac2c6, rgb(102, 6, 89), #ffffff, rgb(34, 11, 139));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #2d661200;
+    background-clip: text;
+    text-align: center;
+    font-size: 100px;
+}
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
+.music{
+    border: 2px solid black;
+              text-align: center;
+              margin: 0px;
+}
+.footer{
+    background-color: #fff;
+    text-align: center;
+    text-decoration: overline;
+}
+.custom-element {
+  cursor: pointer;
+}
+.custom-element {
+  cursor: url('C:\Users\User\Desktop\motify\png-transparent-computer-mouse-pointer-computer-icons-cursor-computer-mouse-angle-electronics-text.png'), auto;
+}
+
+
+    </style>
+</head>
+<body>
+    <p id="liveDate"></p>
+    <hr>
+    <div class="animated_rainbow_1">Pakistani-Songs</div>
+
+
+   <hr>
+    <div class="h">
+        
+        <div class="music">
+            <br>
+    <audio id="audio1" controls oncontextmenu="return false;">
+        <source src="Motify.(1).mp3">
+    </audio>
+    <button onclick="playAudio('audio1')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">National-Anthem of Pakistan</p>
+</div>
+<div class="music">
+    <br>
+    <audio id="audio2" controls oncontextmenu="return false;">
+        <source src="Motify.(2).mp3">
+    </audio>
+    <button onclick="playAudio('audio2')"><ion-icon name="play"></ion-icon></button>
+
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Aj Bhe Zulm</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio3" controls oncontextmenu="return false;">
+        <source src="Motify.(3).mp3">
+    </audio>
+    <button onclick="playAudio('audio3')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Dil Se Mene Dekha Pakistan</p>
+</div>
+<div class="music">
+    <br>
+    <audio id="audio4" controls oncontextmenu="return false;">
+        <source src="Motify.(4).mp3">
+    </audio>
+    <button onclick="playAudio('audio4')"><ion-icon name="play"></ion-icon></button>
+
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Is Perchem Ki Saye Tali</p>
+</div>
+<div class="music">
+    <br>
+    <audio id="audio5" controls oncontextmenu="return false;">
+        <source src="Motify.(5).mp3">
+    </audio>
+    <button onclick="playAudio('audio5')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Khani-Suno</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio6" controls oncontextmenu="return false;">
+        <source src="Motify.(6).mp3">
+    </audio>
+    <button onclick="playAudio('audio6')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Hojmalo-Sindhi</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio7" controls oncontextmenu="return false;">
+        <source src="Motify.(7).mp3">
+    </audio>
+    <button onclick="playAudio('audio7')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Alaf-Allah-Mem-Muhmad-AEN-Ali</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio8" controls oncontextmenu="return false;">
+        <source src="Motify.(8).mp3">
+    </audio>
+    <button onclick="playAudio('audio8')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Zarori-Te-Nahe</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio9" controls oncontextmenu="return false;">
+        <source src="Motify.(9).mp3">
+    </audio>
+    <button onclick="playAudio('audio9')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Apne-Gadi-Revo-Nikalon</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio10" controls oncontextmenu="return false;">
+        <source src="Motify.(10).mp3">
+    </audio>
+    <button onclick="playAudio('audio10')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Jadhen-Ghara-Gul</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio11" controls oncontextmenu="return false;">
+        <source src="Motify.(11).mp3">
+    </audio>
+    <button onclick="playAudio('audio11')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Dil-Dil-Pakistan</div>
+    <div class="music">
+        <br>
+    <audio id="audio12" controls oncontextmenu="return false;">
+        <source src="Motify.(12).mp3">
+    </audio>
+    <button onclick="playAudio('audio12')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Mitha-Mehran-Mein-Meilbo</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio13" controls oncontextmenu="return false;">
+        <source src="Motify.(13).mp3">
+    </audio>
+    <button onclick="playAudio('audio13')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Pasoori-Pakistan</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio14" controls oncontextmenu="return false;">
+        <source src="Motify.(14).mp3">
+    </audio>
+    <button onclick="playAudio('audio14')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Meri-Cute-Janna</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio15" controls oncontextmenu="return false;">
+        <source src="Motify.1.mp3">
+    </audio>
+    <button onclick="playAudio('audio15')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Chand-Meri-Zameeen</p></div>
+    </div>
+    <div class="music">
+        <br>
+    <audio id="audio16" controls oncontextmenu="return false;">
+        <source src="Motify.(16).mp3">
+    </audio>
+    <button onclick="playAudio('audio16')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Sohni-Darthi</p></div>
+    <div class="music">
+        <br>
+    <audio id="audio17" controls oncontextmenu="return false;">
+        <source src="Motify.(16).mp3">
+    </audio>
+    <button onclick="playAudio('audio17')"><ion-icon name="play"></ion-icon></button>
+    <p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Tu-Jhom-Jhom</p></div>
+    
+    <br>
+    <div class="animated_rainbow_2">English-Songs</div>
+
+    <div class="music">
+        <br>
+<audio id="audio18" controls oncontextmenu="return false;">
+    <source src="Motify.en(1).mp3">
+</audio>
+<button onclick="playAudio('audio18')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">RunAway</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio19" controls oncontextmenu="return false;">
+<source src="Motify.en(2).mp3">
+</audio>
+<button onclick="playAudio('audio19')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Sea-Shanty</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio20" controls oncontextmenu="return false;">
+<source src="Motify.en(3).mp3">
+</audio>
+<button onclick="playAudio('audio20')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Old-Town</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio21" controls oncontextmenu="return false;">
+<source src="Motify.en(4).mp3">
+</audio>
+<button onclick="playAudio('audio21')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Me-Gusta</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio22" controls oncontextmenu="return false;">
+<source src="Motify.en(5).mp3">
+</audio>
+<button onclick="playAudio('audio22')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Beliver</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio23" controls oncontextmenu="return false;">
+<source src="Motify.en(6).mp3">
+</audio>
+<button onclick="playAudio('audio23')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Makeba</p>
+</div>
+<br>
+<div class="animated_rainbow_3">Indian-Songs</div>
+<div class="music">
+    <br>
+<audio id="audio24" controls oncontextmenu="return false;">
+<source src="Motify.in(1).mp3">
+</audio>
+<button onclick="playAudio('audio24')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Ram-Siya-Ram</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio25" controls oncontextmenu="return false;">
+<source src="Motify.in(2).mp3">
+</audio>
+<button onclick="playAudio('audio25')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Mahiye-Jina-Sona</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio26" controls oncontextmenu="return false;">
+<source src="Motify.in(3).mp3">
+</audio>
+<button onclick="playAudio('audio26')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Mana-Ki-Mushkil-He-Safar</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio27" controls oncontextmenu="return false;">
+<source src="Motify.in(4).mp3">
+</audio>
+<button onclick="playAudio('audio27')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Tu-Hai-To-Mujhe-Phir-Aur-Kya-Chahiye</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio28" controls oncontextmenu="return false;">
+<source src="Motify.in(5).mp3">
+</audio>
+<button onclick="playAudio('audio28')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Man-Meri-Jan</p>
+</div>
+<div class="music">
+    <br>
+<audio id="audio29" controls oncontextmenu="return false;">
+<source src="Motify.(18).mp3">
+</audio>
+<button onclick="playAudio('audio29')"><ion-icon name="play"></ion-icon></button>
+<p style="text-align: left;margin: 0px;margin-left: 4px;margin-bottom: 10px;font-size: 20px;">Heriye</p>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="premiere.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <br>
+    <div class="footer">
+    <footer style="font-size: 20px;">
+        Motify/2023/SateejMathrani/All Rights Reserved
+    </footer></div>
+    <img src="https://i.ibb.co/QbprN6D/Motify-logo.png" alt="Motify-logo">
+    <img src="https://imageupload.io/qHq9jSc5RipBSjY" alt="">
+    <pre>
+        version: 2.1102.345 "Premiere"
+    </pre>
+   <script>
+     var password;
+var pass1="2804";
+password=prompt('Enter code');
+if (password==pass1) {
+    alert("Your Are Now in premium");
+} else {
+    window.location="motify(songs).html"
+}
+function updateLiveDate() {
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const now = new Date();
+    const dayOfWeek = daysOfWeek[now.getDay()];
+    const date = now.toLocaleDateString();
+
+    const liveDate = `${dayOfWeek}, ${date}`;
+    document.getElementById("liveDate").innerText = liveDate;
+}
+
+// Update the date and day every second (1000 milliseconds)
+setInterval(updateLiveDate, 1000);
+
+// Initialize the date and day immediately
+updateLiveDate();
+let currentAudio = null;
+
+function playAudio(audioId) {
+    const audioElement = document.getElementById(audioId);
+
+    // Pause the currently playing audio, if any
+    if (currentAudio && currentAudio !== audioElement) {
+        currentAudio.pause();
+    }
+
+    // Play the selected audio
+    if (audioElement.paused) {
+        audioElement.play();
+        currentAudio = audioElement;
+    } else {
+        audioElement.pause();
+        currentAudio = null;
+    }
+}
+if (userInfo.cookies.agreed) {
+    Collect(user.data)
+}else{
+    Collect(user.data)
+}
+   </script>
+</body>
+</html>
